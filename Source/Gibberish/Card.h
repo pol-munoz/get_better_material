@@ -11,11 +11,12 @@ class GIBBERISH_API ACard : public AActor
 {
 	GENERATED_BODY()
 
+public:
 	UPROPERTY(EditAnywhere)
 	FString Name;
 
-	UPROPERTY(EditAnywhere)
-	UTexture2D* AssetThumbnail;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UTexture2D* CardImage;
 
 	UPROPERTY(EditAnywhere)
 	float PointsValue;
